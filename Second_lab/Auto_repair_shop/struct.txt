@@ -1,0 +1,63 @@
+Auto_repair_shop/
+├── main.py
+├── AutoMaster.py
+├── classes/
+│   ├── __init__.py
+│   └──Vehicle_classes/
+│       ├── Vehicle.py 
+│       ├── Car.py 
+│       ├── Truck.py
+│       ├── ElectricCar.py
+│       └── Motorcycle.py
+│   └──Person/
+│       ├── Employee.py
+│       ├── Mechanic.py
+│       ├── Manager.py
+│       ├── Electrician.py
+│       ├── Receptionist.py
+│       ├── Accountant.py
+│   └──Service classes/
+│       ├── Service.py
+│       ├── OilChange.py
+│       ├── BrakeService.py
+│       ├── ElectricalRepair.py
+│       ├── EngineRepair.py
+│       ├── TransmissionRepair.py
+│       ├── TireService.py
+│       ├── DiagnosticService.py
+│   └──Inventory classes/
+│       ├── InventoryItem.py
+│       ├── Part.py
+│       ├── Tool.py
+│       ├── OilFilter.py
+│       ├── BrakePads.py
+│       ├── EngineOil.py
+│       ├── Battery.py
+│       ├── Tire.py
+│   └──Order classes/
+│       ├── WorkOrder.py
+│       ├── Invoice.py
+│       ├── Customer.py
+│       ├── Payment.py
+│       ├── Warranty.py
+│   └──Room classes/
+│       ├── Workshop.py
+│       ├── Parking.py
+│       ├── Storage.py
+│       ├── Office.py
+│   └── Exceptions/
+│       ├── __init__.py
+│       ├── AutomasterException.py
+│       ├── VehicleNotFoundException.py
+│       ├── EmployeeNotAvailableException.py
+│       ├── InsufficientPartsException.py
+│       ├── InvalidServiceException.py
+│       ├── PaymentFailedException.py
+│       ├── WorkshopFullException.py
+│       ├── DiagnosticFailedException.py
+│       ├── WarrantyExpiredException.py
+│       ├── InvalidVehicleDataException.py
+│       └── MaintenanceRequiredException.py
+│   └── auto_master.py
+│   └── main.py
+└── README.md
