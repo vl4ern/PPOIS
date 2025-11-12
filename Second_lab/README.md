@@ -115,3 +115,69 @@ Tire 6 2 -> Part
 Tool 6 2 -> InventoryItem
 - Поля: item_id, name, description, price, tool_type, is_available
 - Методы: __init__, __str__
+
+### Orser_classes
+
+Customer 6 4 -> Automaster, Vehicle
+- Поля: customer_id, name, phone, email, vehicles, order_history
+- Методы: __init__, __str__, add_vehicle, add_order_to_history
+
+Invoice 5 3 -> Payment, WorkOrder, Customer
+- Поля: invoice_id, work_order, issue_date, is_paid, payment_method
+- Методы: __init__, __str__, process_payment
+
+Payment -> Invoice, Customer
+- Поля: payment_id, amount, payment_method, payment_date, status
+- Методы: __init__, __str__
+
+Warranty -> WorkOrder
+- Поля: warranty_id, work_order, duration_months, issue_date, expiry_date
+- Методы: __init__, __str__, is_valid
+
+WorkOrder 8 6 -> Vehicle, Customer, Service
+- Поля: order_id, vehicle, customer_name, creation_date, status, services, assigned_mechanic, total_cost
+- Методы: __init__, __str__, complete_order, _calculate_total_cost, assign_mechanic, add_service
+
+### Person
+
+Accountant 5 2 -> Employee
+- Поля: self, employee_id, name, salary, certification
+- Методы: __init__, __str__
+
+Electrician 4 2 -> Mechanic
+- Поля: employee_id, name, salary, certification_level
+- Методы: __init__, __str__
+
+Employee 5 2 
+- Поля: employee_id, name, position, salary, is_avalable
+- Методы: __init__, __str__
+
+Manager 4 2 -> Employee
+- Поля: employee_id, name, salary, department
+- Методы: __init__, __str__
+
+Mechanic 6 3 -> Employee, Vehicle
+- Поля: employee_id, name, salary, specialization, current_vechicle, is_avalable
+- Методы: __init__, __str__, assign_vehicle
+
+Receprionist 8 3 -> Employee
+- Поля: employee_id, name, salary, shift, customer, date_time, service, appointment
+- Методы: __init__, __str__, schedule_appointment
+
+### Room_classes
+
+Office 4 3 -> Employee
+- Поля: office_id, area, department, employees
+- Методы: __init__, __str__, add_employee
+
+Parking 4 3 -> Vehicle
+- Поля: parking_id, area, capacity, parked_vehicles
+- Методы: __init__, __str__, park_vehicle
+
+Storage 5 3 -> InventoryItem
+- Поля: storage_id, area, capacity, inventory_items, quantity
+- Методы: __init__, __str__, add_item
+
+Workshop 5 3 -> Vehicle
+- Поля: workshop_id, area, capacity, vehicle, current_vehicles
+- Методы: __init__, __str__, add_vehicle
