@@ -181,3 +181,10 @@ Storage 5 3 -> InventoryItem
 Workshop 5 3 -> Vehicle
 - Поля: workshop_id, area, capacity, vehicle, current_vehicles
 - Методы: __init__, __str__, add_vehicle
+
+### Auto master
+
+from classes.Service_classes import TireService
+AutoMaster 23 10 -> Car, Track, Electric_Car, Motorcycle, Mechanic, Manager, Electrician, Receprionist, Accountant, OilChange, BrakeService, ElectricalRepair, EngineRepair, TransmissionRepair, TireService, DiagnosticService, OilFilter, BrakePads, EngineOil, Battery, Tire, WorkOrder, Invoice, Customer, Warranty, Workshop, Parking, Storage, Office
+- Поля: customers, work_orders, employees, inventory, facilities, _initialize_data, customer_id, customer, vehicle_type, vin, brand, model, year, services, available_services, key, service_num, order_id, work_order, invoice_id, payment_methods, payment_choice, warranty_id
+- Методы: display_order_summary, create_warranty, process_payment_interactive, create_invoice, create_work_order, choose_services_interactive, create_vehicle, create_customer, _initialize_data, init
