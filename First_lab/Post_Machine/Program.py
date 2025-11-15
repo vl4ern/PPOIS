@@ -1,4 +1,4 @@
-from machine_rule import Rule
+from PPOIS.First_lab.Post_Machine.Rule import Rule
 
 class Program:
     """Класс, представляющий программу машины Поста как набор правил"""

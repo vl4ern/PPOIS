@@ -311,7 +311,7 @@ class MainModuleCoverageTests(unittest.TestCase):
 
     @mock.patch('builtins.print')
     def test_main_no_args_causes_exit(self, mock_print):
-        import machine_main as mm
+        import PPOIS.First_lab.Post_Machine.main as mm
         old_argv = sys.argv[:]
         sys.argv = ['machine_main.py']
         with self.assertRaises(SystemExit):
@@ -321,7 +321,7 @@ class MainModuleCoverageTests(unittest.TestCase):
 
     @mock.patch('builtins.print')
     def test_main_normal_and_log_modes_and_file_not_found_and_exceptions(self, mock_print):
-        import machine_main as mm
+        import PPOIS.First_lab.Post_Machine.main as mm
         old_argv = sys.argv[:]
         sys.argv = ['machine_main.py', self.tmp.name]
         mm.main()

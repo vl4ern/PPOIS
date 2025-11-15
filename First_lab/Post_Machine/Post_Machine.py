@@ -1,5 +1,5 @@
-from machine_tape import Tape
-from machine_program import Program
+from PPOIS.First_lab.Post_Machine.Tape import Tape
+from PPOIS.First_lab.Post_Machine.Program import Program
 
 class Post_Machine:
     def __init__(self):

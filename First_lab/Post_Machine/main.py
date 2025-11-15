@@ -1,5 +1,5 @@
 import sys
-from machine_post import Post_Machine
+from PPOIS.First_lab.Post_Machine.Post_Machine import Post_Machine
 
 def main():
     if len(sys.argv) < 2:

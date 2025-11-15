@@ -2,7 +2,7 @@ import unittest
 import sys
 import io
 from unittest.mock import patch
-from tag_game import Tag_game
+from PPOIS.First_lab.Tag_game.Tag_game import Tag_game
 
 class TestFifteenPuzzle(unittest.TestCase):
     

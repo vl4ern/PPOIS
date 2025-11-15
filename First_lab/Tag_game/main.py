@@ -1,4 +1,4 @@
-from tag_game import Tag_game
+from PPOIS.First_lab.Tag_game.Tag_game import Tag_game
 
 if __name__ == "__main__":
     game = Tag_game()
