@@ -30,71 +30,71 @@
 
 Vehicle 6 4 -> Part, Service, Diagnostic
 - Поля: vin, brand, model, year, mileage, last_service_date 
-- Методы: update_mileage, get_vehicle_info, __init__, __str__
+- Методы: update_mileage, get_vehicle_info, init, str
 
 Track 5 3 -> Vehicle
 - Поля: vin, brand, model, year, max_load
-- Методы: load_cargo, get_vehicle_info, __init__
+- Методы: load_cargo, get_vehicle_info, init
 
 Motorcycle 5 2 -> Vehicle
 - Поля: vin, brand, model, year, engine_size
-- Методы: get_vehicle_info, __init__
+- Методы: get_vehicle_info, init
 
 ElectricCar 6 3 -> Car
 - Поля: vin, brand, model, year, body_type, battery_capacity
-- Методы: charge_battery, get_vehicle_info, __init__
+- Методы: charge_battery, get_vehicle_info, init
 
 Car 5 2 -> Vehicle
 - Поля: vin, brand, model, year, body_type
-- Методы: get_vehicle_info, __init__
+- Методы: get_vehicle_info, init
 
 ### Service_classes
 
 BrakeService 3 2 -> Service
 - Поля: service_id, brake_pads_needed, base_price
-- Методы: calculate_final_price, __init__
+- Методы: calculate_final_price, init
 
 DiagnosticService 3 2 -> Service
 - Поля: service_id, duration_hours, base_price
-- Методы: calculate_final_price, __init__
+- Методы: calculate_final_price, init
 
 ElectricalRepair 3 2 -> Service
 - Поля: service_id, complexity, base_price
-- Методы: calculate_final_price, __init__
+- Методы: calculate_final_price, init
 
 EngineRepair 3 2 -> Service
 - Поля: service_id, duration_hours, base_price
-- Методы: calculate_final_price, __init__
+- Методы: calculate_final_price, init
 
 OilChange 4 2 -> Service
 - Поля: service_id, oil_type, vehicle, base_price
-- Методы: calculate_final_price, __init__
+- Методы: calculate_final_price, init
 
 Service 5 3 -> Part, Vehicle
 - Поля: service_id, name, description, base_price, duration_hours
-- Методы: calculate_final_price, __init__, __str__
+- Методы: calculate_final_price, init, str
 
 TireService 3 2 -> Service
 - Поля: service_id, includes_balance, base_price
-- Методы: calculate_final_price, __init__
+- Методы: calculate_final_price, init
 
 TransmissionRepair 3 2 -> Service
 - Поля: service_id, duration_hours, base_price
-- Методы: calculate_final_price, __init__
+- Методы: calculate_final_price, init
 
 ### Inventory_classes
 
 Battery 6 2 -> Part
 - Поля: item_id, name, price, compatible_vehicles, voltage, capacity
-- Методы: __init__, __str__
+- Методы: init, str
 
 BrakePads 5 2 -> Part
 - Поля: item_id, name, price, compatible_vehicles, material
-- Методы: __init__, __str__
+- Методы: init, str
 
 EngineOil 5 2 -> InventoryItem
 - Поля: item_id, name, price, viscosity, oil_type
-- Методы: __init__, __str__
+- Методы: init, str
 
 InventoryItem 6 2 -> Service, Vehicle
 - Поля: item_id, name, description, price, quantity, amount
@@ -102,7 +102,7 @@ InventoryItem 6 2 -> Service, Vehicle
 
 OilFilter 5 1 -> Part
 - Поля: item_id, name, price, compatible_vehicles, filter_type
-- Методы: __init__, __str__
+- Методы: init, str
 
 Part 5 1 -> InventoryItem
 - Поля: item_id, name, description, price, compatible_vehicles
@@ -110,77 +110,77 @@ Part 5 1 -> InventoryItem
 
 Tire 6 2 -> Part
 - Поля: item_id, name, price, compatible_vehicles, size, season
-- Методы: __init__, __str__
+- Методы: init, str
 
 Tool 6 2 -> InventoryItem
 - Поля: item_id, name, description, price, tool_type, is_available
-- Методы: __init__, __str__
+- Методы: init, str
 
 ### Orser_classes
 
 Customer 6 4 -> Automaster, Vehicle
 - Поля: customer_id, name, phone, email, vehicles, order_history
-- Методы: __init__, __str__, add_vehicle, add_order_to_history
+- Методы: init, str, add_vehicle, add_order_to_history
 
 Invoice 5 3 -> Payment, WorkOrder, Customer
 - Поля: invoice_id, work_order, issue_date, is_paid, payment_method
-- Методы: __init__, __str__, process_payment
+- Методы: init, str, process_payment
 
 Payment -> Invoice, Customer
 - Поля: payment_id, amount, payment_method, payment_date, status
-- Методы: __init__, __str__
+- Методы: init, str
 
 Warranty -> WorkOrder
 - Поля: warranty_id, work_order, duration_months, issue_date, expiry_date
-- Методы: __init__, __str__, is_valid
+- Методы: init, str, is_valid
 
 WorkOrder 8 6 -> Vehicle, Customer, Service
 - Поля: order_id, vehicle, customer_name, creation_date, status, services, assigned_mechanic, total_cost
-- Методы: __init__, __str__, complete_order, _calculate_total_cost, assign_mechanic, add_service
+- Методы: init, str, complete_order, _calculate_total_cost, assign_mechanic, add_service
 
 ### Person
 
 Accountant 5 2 -> Employee
 - Поля: self, employee_id, name, salary, certification
-- Методы: __init__, __str__
+- Методы: init, str
 
 Electrician 4 2 -> Mechanic
 - Поля: employee_id, name, salary, certification_level
-- Методы: __init__, __str__
+- Методы: init, str
 
 Employee 5 2 
 - Поля: employee_id, name, position, salary, is_avalable
-- Методы: __init__, __str__
+- Методы: init, str
 
 Manager 4 2 -> Employee
 - Поля: employee_id, name, salary, department
-- Методы: __init__, __str__
+- Методы: init, str
 
 Mechanic 6 3 -> Employee, Vehicle
 - Поля: employee_id, name, salary, specialization, current_vechicle, is_avalable
-- Методы: __init__, __str__, assign_vehicle
+- Методы: init, str, assign_vehicle
 
 Receprionist 8 3 -> Employee
 - Поля: employee_id, name, salary, shift, customer, date_time, service, appointment
-- Методы: __init__, __str__, schedule_appointment
+- Методы: init, str, schedule_appointment
 
 ### Room_classes
 
 Office 4 3 -> Employee
 - Поля: office_id, area, department, employees
-- Методы: __init__, __str__, add_employee
+- Методы: init, str, add_employee
 
 Parking 4 3 -> Vehicle
 - Поля: parking_id, area, capacity, parked_vehicles
-- Методы: __init__, __str__, park_vehicle
+- Методы: init, str, park_vehicle
 
 Storage 5 3 -> InventoryItem
 - Поля: storage_id, area, capacity, inventory_items, quantity
-- Методы: __init__, __str__, add_item
+- Методы: init, str, add_item
 
 Workshop 5 3 -> Vehicle
 - Поля: workshop_id, area, capacity, vehicle, current_vehicles
-- Методы: __init__, __str__, add_vehicle
+- Методы: init, str, add_vehicle
 
 ### Auto master
 

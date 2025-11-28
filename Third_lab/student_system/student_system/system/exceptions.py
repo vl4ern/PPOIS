@@ -1,5 +1,6 @@
 class StudentSystemError(Exception):
     """Base exception for student system."""
+    pass
 class InvalidSelectionError(StudentSystemError):
     pass
 class DuplicateIDError(StudentSystemError):
