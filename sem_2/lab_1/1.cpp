@@ -1,6 +1,8 @@
 #include<iostream>
 using namespace std;
 int main(){
-    cout << "hello, ussr!" << endl;
+    int n, t;
+    cin >> n;
+    cout << "hello, ussr!" << n << endl;
     return 0;
 }
