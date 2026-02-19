@@ -28,7 +28,7 @@ class Parking:
     def add_service(self, service: Service)->None:
         self.services[service.service_id] = service
 
-    def get_add_spots(self)->List[str]:
+    def get_free_spots(self)->List[str]:
         return[spot_id for spot_id, spot in self.spots.items() if not spot.is_occupied]
     
     def get_occupied_spots(self)->List[str]:
