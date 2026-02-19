@@ -59,7 +59,7 @@ class Parking:
     def save_to_file(self, filename: str = "data/parking_data.json")->None:
         os.makedirs(os.path.dirname(filename), exist_ok=True)
         with open(filename, 'w', encoding='utf-8') as f:
-            json.damp(self.to_dict(), f, ensure_ascii=False, indent=2)
+            json.dump(self.to_dict(), f, ensure_ascii=False, indent=2)
 
     @staticmethod
     def load_from_file(filename: str = "data/parking_data.json")->'Parking':

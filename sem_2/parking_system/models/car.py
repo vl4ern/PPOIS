@@ -4,11 +4,11 @@ from typing import Optional, List
 class Car:
     """Класс под автомобиль"""
 
-    def __init__(self, license: str, model: str, year: int, owenr: str):
+    def __init__(self, license: str, model: str, year: int, owner: str):
         self.license = license
         self.model = model
         self.year = year
-        self.owner = owenr
+        self.owner = owner
         self.entry_time: Optional[datetime] = None
         self.spot_id: Optional[str] = None
         self.paid: bool = False

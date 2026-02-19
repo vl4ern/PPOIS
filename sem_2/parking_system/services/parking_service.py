@@ -14,7 +14,7 @@ class PaymentError(Exception):
 
 class PaskingService:
     def __init__(self, parking: Parking):
-        self.parking = Parking
+        self.parking = parking
 
     def place_car(self, car: Car, spot_id: str)-> bool:
         if spot_id not in self.parking.spots:
