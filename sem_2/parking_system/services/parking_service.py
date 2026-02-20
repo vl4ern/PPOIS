@@ -36,7 +36,7 @@ class PaskingService:
     
     def pay_for_parking(self, license: str, tariff_id: str)->dict:
         if license not in self.parking.cars:
-            raise (f"Автомобиль {license} не найден на парковке!")
+            raise CArNotFound(f"Автомобиль {license} не найден на парковке!")
         
         if tariff_id not in self.parking.tariffs:
             raise ValueError(f"Тариф {tariff_id} не существует!")
@@ -44,10 +44,10 @@ class PaskingService:
         car = self.parking.cars[license]
         tariff = self.parking.tariffs[tariff_id]
 
-        cost = tariff.calculate_cost[tariff.min_time]
+        cost = tariff.calculate_cost(int(tariff.min_time))
 
         car.paid = True
-        car.paid_time = tariff.min_time
+        car.paid_time = int(tariff.min_time)
 
         self.parking.total_income += cost
 

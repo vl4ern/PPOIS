@@ -18,6 +18,6 @@ class Service:
         return Service(
             service_id=data['service_id'],
             name=data['name'],
-            price=data['price'],
+            price=float(data['price']),
             description=data.get('description', '')
         )

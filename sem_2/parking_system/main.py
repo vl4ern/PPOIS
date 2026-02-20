@@ -50,7 +50,7 @@ class ParkingApp(ctk.CTk):
         self.free_label = ctk.CTkLabel(self.stats_frame, text="Свободно: 0")
         self.free_label.grid(row=0, column=2, padx=10, pady=5)
         
-        self.income_label = ctk.CTkLabel(self.stats_frame, text="Доход: 0 ₽")
+        self.income_label = ctk.CTkLabel(self.stats_frame, text="Доход: 0 $")
         self.income_label.grid(row=0, column=3, padx=10, pady=5)
         
         # ========== Главный контейнер ==========
@@ -98,7 +98,7 @@ class ParkingApp(ctk.CTk):
         self.total_label.configure(text=f"Всего мест: {len(self.parking.spots)}")
         self.occupied_label.configure(text=f"Занято: {occupied_spots}")
         self.free_label.configure(text=f"Свободно: {free_spots}")
-        self.income_label.configure(text=f"Доход: {self.parking.total_income:.2f} ₽")
+        self.income_label.configure(text=f"Доход: {self.parking.total_income:.2f} $")
     
     # ========== Вкладка "Главная" ==========
     def create_home_tab(self):
@@ -339,7 +339,7 @@ class ParkingApp(ctk.CTk):
         for tariff_id, tariff in self.parking.tariffs.items():
             btn = ctk.CTkRadioButton(
                 tariff_frame,
-                text=f"{tariff.name} - {float(tariff.price_per_hour):.0f} ₽",
+                text=f"{tariff.name} - {float(tariff.price_per_hour):.0f} $",
                 variable=self.tariff_var,
                 value=tariff_id
             )
@@ -407,7 +407,7 @@ class ParkingApp(ctk.CTk):
             
             messagebox.showinfo(
                 "Оплата успешна",
-                f"Стоимость: {payment_info['cost']} ₽\n"
+                f"Стоимость: {payment_info['cost']} $\n"
                 f"Тариф: {payment_info['tariff_name']}\n"
                 f"Время: {payment_info['duration']} часов"
             )
@@ -460,7 +460,7 @@ class ParkingApp(ctk.CTk):
             var = ctk.BooleanVar()
             checkbox = ctk.CTkCheckBox(
                 services_frame,
-                text=f"{service.name} - {service.price} ₽",
+                text=f"{service.name} - {service.price} $",
                 variable=var
             )
             checkbox.pack(anchor="w", padx=20, pady=5)
@@ -529,8 +529,11 @@ class ParkingApp(ctk.CTk):
         messagebox.showinfo(
             "Услуги заказаны",
             f"Заказано {len(selected_services)} услуг(и)\n"
-            f"Общая стоимость: {total_cost} ₽"
+            f"Общая стоимость: {total_cost} $"
         )
+
+        for var in self.service_vars.values():
+            var.set(False)
     
     # ========== Вкладка "Охрана" ==========
     def create_security_tab(self):
@@ -772,7 +775,7 @@ class ParkingApp(ctk.CTk):
             return
         
         item = self.tree.item(selected[0])
-        license_plate = item['values'][0]
+        license_plate = str(item['values'][0])
         
         try:
             result = self.service.remove_car(license_plate)

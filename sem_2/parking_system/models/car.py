@@ -38,8 +38,8 @@ class Car:
         )
         if data['entry_time']:
             car.entry_time = datetime.fromisoformat(data['entry_time'])
-        car.spot_id=data['spod_id']
+        car.spot_id=data['spot_id']
         car.paid=data['paid']
-        car.paid_time=data['paid_time']
-        car.services=data['services']
+        car.paid_time=data.get('paid_duration', 0)
+        car.services=data.get('services', [])
         return car

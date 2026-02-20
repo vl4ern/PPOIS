@@ -23,7 +23,7 @@ class Tariff:
         return Tariff(
             tariff_id=data['tariff_id'],
             name=data['name'],
-            price_per_hour=data['price_per_hour'],
+            price_per_hour=float(data['price_per_hour']),
             min_time=data['min_time'],
             max_time=data['max_time']
         )

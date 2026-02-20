@@ -18,7 +18,7 @@ class ParkingSpot:
     @staticmethod
     def from_dict(data: dict)->'ParkingSpot':
         spot = ParkingSpot(data['spot_id'])
-        spot.is_occupied = data['is_occupited']
+        spot.is_occupied = data['is_occupied']
         spot.car_plate = data['car_plate']
         spot.tariff_id = data['tariff_id']
         return spot
