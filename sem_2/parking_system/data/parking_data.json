@@ -21,8 +21,8 @@
     },
     "A04": {
       "spot_id": "A04",
-      "is_occupied": true,
-      "car_plate": "12341234",
+      "is_occupied": false,
+      "car_plate": null,
       "tariff_id": "standart"
     },
     "A05": {
@@ -45,8 +45,8 @@
     },
     "A08": {
       "spot_id": "A08",
-      "is_occupied": false,
-      "car_plate": null,
+      "is_occupied": true,
+      "car_plate": "12121212",
       "tariff_id": "standart"
     },
     "A09": {
@@ -75,8 +75,8 @@
     },
     "A13": {
       "spot_id": "A13",
-      "is_occupied": true,
-      "car_plate": "12312312",
+      "is_occupied": false,
+      "car_plate": null,
       "tariff_id": "standart"
     },
     "A14": {
@@ -87,27 +87,21 @@
     }
   },
   "cars": {
-    "12341234": {
-      "license": "12341234",
-      "model": "кук",
-      "year": 1999,
-      "owner": "цуц",
-      "entry_time": "2026-02-20T10:41:44.462984",
-      "spot_id": "A04",
-      "paid": false,
-      "paid_duration": 0,
-      "services": []
-    },
-    "12312312": {
-      "license": "12312312",
-      "model": "volvo",
-      "year": 2002,
-      "owner": "hool",
-      "entry_time": "2026-02-20T11:13:01.939201",
-      "spot_id": "A13",
+    "12121212": {
+      "license": "12121212",
+      "model": "tbtbtb",
+      "year": 2000,
+      "owner": "jbnbn",
+      "entry_time": "2026-02-20T14:00:27.958633",
+      "spot_id": "A08",
       "paid": true,
-      "paid_duration": 4,
-      "services": []
+      "paid_duration": 24,
+      "services": [
+        "wash",
+        "charge",
+        "wifi",
+        "security"
+      ]
     }
   },
   "tariffs": {
@@ -166,6 +160,6 @@
       "description": "Дополнительный контроль за автотранспортом в случае чп ремонт за счет компании."
     }
   },
-  "total_income": 30.0,
+  "total_income": 12201.0,
   "security_status": "active"
 }

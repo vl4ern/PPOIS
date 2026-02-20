@@ -53,7 +53,7 @@ class PaskingService:
 
         return{
             'cost': cost,
-            'time': tariff.min_time,
+            'duration': tariff.min_time,
             'tariff_name': tariff.name
         }
     

@@ -92,13 +92,22 @@ class ParkingApp(ctk.CTk):
         
     def update_status(self):
         """Обновление статистики"""
-        free_spots = len(self.parking.get_free_spots())
+        free_spots_list = self.parking.get_free_spots()
+        free_spots_count = len(self.parking.get_free_spots())
         occupied_spots = len(self.parking.get_occupied_spots())
         
         self.total_label.configure(text=f"Всего мест: {len(self.parking.spots)}")
         self.occupied_label.configure(text=f"Занято: {occupied_spots}")
-        self.free_label.configure(text=f"Свободно: {free_spots}")
+        self.free_label.configure(text=f"Свободно: {free_spots_count}")
         self.income_label.configure(text=f"Доход: {self.parking.total_income:.2f} $")
+
+        if hasattr(self, 'spot_combo'):
+            self.spot_combo.configure(free_spots_list)
+            current_spot = self.spot_combo.get()
+            if not free_spots_list:
+                self.spot_combo.set("Нет мест.")
+            elif current_spot not in free_spots_list:
+                self.spot_combo.set(free_spots_list[0])
     
     # ========== Вкладка "Главная" ==========
     def create_home_tab(self):
