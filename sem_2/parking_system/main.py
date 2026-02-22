@@ -52,6 +52,17 @@ class ParkingApp(ctk.CTk):
         
         self.income_label = ctk.CTkLabel(self.stats_frame, text="Доход: 0 $")
         self.income_label.grid(row=0, column=3, padx=10, pady=5)
+
+        self.reset_income_btn = ctk.CTkButton(
+            self.stats_frame,
+            text="Сбросить",
+            width=80,
+            fg_color="#D32F2F",  
+            hover_color="#B71C1C",
+            command=self.reset_total_income 
+        )
+        self.reset_income_btn.grid(row=0, column=4, padx=10, pady=5)
+        
         
         # ========== Главный контейнер ==========
         self.main_container = ctk.CTkFrame(self)
@@ -108,6 +119,30 @@ class ParkingApp(ctk.CTk):
                 self.spot_combo.set("Нет мест.")
             elif current_spot not in free_spots_list:
                 self.spot_combo.set(free_spots_list[0])
+
+
+    def reset_total_income(self):
+        """Обработка нажатия на кнопку сброса дохода"""
+        # Спрашиваем подтверждение (защита от случайного клика)
+        confirm = messagebox.askyesno(
+            "Подтверждение", 
+            "Вы уверены, что хотите обнулить счетчик дохода?\n\nЭто действие нельзя отменить!"
+        )
+        
+        if confirm:
+            try:
+                # 1. Сбрасываем доход через сервис
+                self.service.reset_income()
+                
+                # 2. Сохраняем изменения в файл (чтобы при перезапуске был 0)
+                self.parking.save_to_file()
+                
+                # 3. Обновляем цифры на экране
+                self.update_status()
+                
+                messagebox.showinfo("Успех", "Касса успешно обнулена (проведена инкассация).")
+            except Exception as e:
+                messagebox.showerror("Ошибка", f"Не удалось обнулить доход: {str(e)}")
     
     # ========== Вкладка "Главная" ==========
     def create_home_tab(self):

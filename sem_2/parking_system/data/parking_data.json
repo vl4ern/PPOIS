@@ -45,8 +45,8 @@
     },
     "A08": {
       "spot_id": "A08",
-      "is_occupied": true,
-      "car_plate": "12121212",
+      "is_occupied": false,
+      "car_plate": null,
       "tariff_id": "standart"
     },
     "A09": {
@@ -86,24 +86,7 @@
       "tariff_id": "standart"
     }
   },
-  "cars": {
-    "12121212": {
-      "license": "12121212",
-      "model": "tbtbtb",
-      "year": 2000,
-      "owner": "jbnbn",
-      "entry_time": "2026-02-20T14:00:27.958633",
-      "spot_id": "A08",
-      "paid": true,
-      "paid_duration": 24,
-      "services": [
-        "wash",
-        "charge",
-        "wifi",
-        "security"
-      ]
-    }
-  },
+  "cars": {},
   "tariffs": {
     "standart": {
       "tariff_id": "standart",
@@ -160,6 +143,6 @@
       "description": "Дополнительный контроль за автотранспортом в случае чп ремонт за счет компании."
     }
   },
-  "total_income": 12201.0,
+  "total_income": 0.0,
   "security_status": "active"
 }

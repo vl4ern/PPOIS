@@ -129,6 +129,10 @@ class PaskingService:
             'recommendation': self._get_traffic_recommendation(occupancy_rate)
         }
     
+    def reset_income(self) -> None:
+        """Обнуление общего дохода (инкассация)"""
+        self.parking.total_income = 0.0
+    
     def _get_traffic_recommendation(self, occupancy_rate: float) -> str:
         if occupancy_rate < 30:
             return 

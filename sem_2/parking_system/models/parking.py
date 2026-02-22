@@ -78,14 +78,14 @@ class Parking:
             spot_id = f"A{i:02d}"
             parking.add_spot(spot_id)
 
-        parking.add_tariff(Tariff("standart", "Стандартный (1 час)", "2.0", "1","1"))
-        parking.add_tariff(Tariff("four_hour", "Увеличенный (4 часа)", "7.0", "4","4"))
-        parking.add_tariff(Tariff("day", "Суточный", "40.0", "24","24"))
-        parking.add_tariff(Tariff("three_days", "Трех дневный", "125.0", "72","72"))
+        parking.add_tariff(Tariff("standart", "Стандартный (1 час)", 2.0, 1,1))
+        parking.add_tariff(Tariff("four_hour", "Увеличенный (4 часа)", 7.0, 4,4))
+        parking.add_tariff(Tariff("day", "Суточный", 40.0, 24,24))
+        parking.add_tariff(Tariff("three_days", "Трех дневный", 125.0, 72,72))
 
-        parking.add_service(Service("wash", "Мойка авто", "230.0", "Полная мойка автомобиля."))
-        parking.add_service(Service("charge", "Зарядка авто", "140.0", "Зарядка электрокара."))
-        parking.add_service(Service("wifi", "Wi-fi на парковке", "15.0", "Высокоскоростной интернет по всей территории автостоянки."))
-        parking.add_service(Service("security", "Повышенная охрана", "350.0", "Дополнительный контроль за автотранспортом в случае чп ремонт за счет компании."))
+        parking.add_service(Service("wash", "Мойка авто", 230.0, "Полная мойка автомобиля."))
+        parking.add_service(Service("charge", "Зарядка авто", 140.0, "Зарядка электрокара."))
+        parking.add_service(Service("wifi", "Wi-fi на парковке", 15.0, "Высокоскоростной интернет по всей территории автостоянки."))
+        parking.add_service(Service("security", "Повышенная охрана", 350.0, "Дополнительный контроль за автотранспортом в случае чп ремонт за счет компании."))
 
         return parking
