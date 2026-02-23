@@ -71,6 +71,8 @@
 
 ![](diogramm_class.png)
 
+## Диограмма состояния
 
+![](diogramm_sostoya.png)
 
 ![](https://i.gifer.com/XOsX.gif)
