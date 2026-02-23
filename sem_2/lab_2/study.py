@@ -1,25 +1,26 @@
-l1 = [2,4,3]
-l2 = [5,6,4]
-l3 = [] 
-l4 = [] 
-l5 = []
-for l in range(0,len(l1)):
-    l3.insert(0,l1[l])
-    l += 1
+def get_rubles():
+    while True:
+        try:
+            rubles = int(input("Введите количество рублей: "))
+            if rubles > 0:
+                return rubles
+            else:
+                print("Надо ввести положительное число!")
+        except ValueError:
+            print("Надо ввести целое число.")
 
-for l in range(0,len(l2)):
-    l4.insert(0,l2[l])
-    l += 1
+def convert_to_usd(rubles, rate):
+    balance_usd = rubles * rate
+    return balance_usd
 
-res1 = int(''.join(map(str, l3))) 
+def show_balance(usd_amount):
+    print(f"Ваш баланс в долларах: ${usd_amount:.2f}.")
 
-res2 = int(''.join(map(str, l4))) 
+def main():
+    current_rate = 3.3
+    my_money = get_rubles()
+    balance_usd = convert_to_usd(my_money, current_rate)
+    show_balance(balance_usd)
 
-col = res1 + res2
-
-while col > 0:
-    l5.append(col%10)
-    col//=10
-
-#l5.reverse()
-print(l5)
+if __name__ == "__main__":
+    main()
