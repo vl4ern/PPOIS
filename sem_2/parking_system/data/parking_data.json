@@ -3,8 +3,8 @@
   "spots": {
     "A01": {
       "spot_id": "A01",
-      "is_occupied": false,
-      "car_plate": null,
+      "is_occupied": true,
+      "car_plate": "aA1221Aa",
       "tariff_id": "standart"
     },
     "A02": {
@@ -86,7 +86,24 @@
       "tariff_id": "standart"
     }
   },
-  "cars": {},
+  "cars": {
+    "aA1221Aa": {
+      "license": "aA1221Aa",
+      "model": "ass",
+      "year": 1900,
+      "owner": "goida",
+      "entry_time": "2026-03-13T23:46:16.405192",
+      "spot_id": "A01",
+      "paid": true,
+      "paid_duration": 24,
+      "services": [
+        "wash",
+        "charge",
+        "wifi",
+        "security"
+      ]
+    }
+  },
   "tariffs": {
     "standart": {
       "tariff_id": "standart",
@@ -143,6 +160,6 @@
       "description": "Дополнительный контроль за автотранспортом в случае чп ремонт за счет компании."
     }
   },
-  "total_income": 0.0,
+  "total_income": 1695.0,
   "security_status": "active"
 }

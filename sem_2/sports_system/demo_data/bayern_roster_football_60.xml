@@ -1,0 +1,491 @@
+<?xml version="1.0" ?>
+<sportsmen>
+    <sportsman>
+        <full_name>Manuel Neuer</full_name>
+        <squad_status>основной</squad_status>
+        <position>вратарь</position>
+        <titles_count>28</titles_count>
+        <sport_type>football</sport_type>
+        <rank>мастер спорта</rank>
+    </sportsman>
+    <sportsman>
+        <full_name>Sven Ulreich</full_name>
+        <squad_status>запасной</squad_status>
+        <position>вратарь</position>
+        <titles_count>11</titles_count>
+        <sport_type>football</sport_type>
+        <rank>КМС</rank>
+    </sportsman>
+    <sportsman>
+        <full_name>Daniel Peretz</full_name>
+        <squad_status>запасной</squad_status>
+        <position>вратарь</position>
+        <titles_count>6</titles_count>
+        <sport_type>football</sport_type>
+        <rank>2-й разряд</rank>
+    </sportsman>
+    <sportsman>
+        <full_name>Alphonso Davies</full_name>
+        <squad_status>основной</squad_status>
+        <position>левый защитник</position>
+        <titles_count>19</titles_count>
+        <sport_type>football</sport_type>
+        <rank>КМС</rank>
+    </sportsman>
+    <sportsman>
+        <full_name>Noussair Mazraoui</full_name>
+        <squad_status>основной</squad_status>
+        <position>правый защитник</position>
+        <titles_count>14</titles_count>
+        <sport_type>football</sport_type>
+        <rank>КМС</rank>
+    </sportsman>
+    <sportsman>
+        <full_name>Dayot Upamecano</full_name>
+        <squad_status>основной</squad_status>
+        <position>центральный защитник</position>
+        <titles_count>15</titles_count>
+        <sport_type>football</sport_type>
+        <rank>КМС</rank>
+    </sportsman>
+    <sportsman>
+        <full_name>Kim Min-jae</full_name>
+        <squad_status>основной</squad_status>
+        <position>центральный защитник</position>
+        <titles_count>18</titles_count>
+        <sport_type>football</sport_type>
+        <rank>мастер спорта</rank>
+    </sportsman>
+    <sportsman>
+        <full_name>Eric Dier</full_name>
+        <squad_status>запасной</squad_status>
+        <position>центральный защитник</position>
+        <titles_count>10</titles_count>
+        <sport_type>football</sport_type>
+        <rank>2-й разряд</rank>
+    </sportsman>
+    <sportsman>
+        <full_name>Raphael Guerreiro</full_name>
+        <squad_status>запасной</squad_status>
+        <position>левый защитник</position>
+        <titles_count>13</titles_count>
+        <sport_type>football</sport_type>
+        <rank>КМС</rank>
+    </sportsman>
+    <sportsman>
+        <full_name>Konrad Laimer</full_name>
+        <squad_status>основной</squad_status>
+        <position>опорный полузащитник</position>
+        <titles_count>16</titles_count>
+        <sport_type>football</sport_type>
+        <rank>КМС</rank>
+    </sportsman>
+    <sportsman>
+        <full_name>Joshua Kimmich</full_name>
+        <squad_status>основной</squad_status>
+        <position>центральный полузащитник</position>
+        <titles_count>24</titles_count>
+        <sport_type>football</sport_type>
+        <rank>мастер спорта</rank>
+    </sportsman>
+    <sportsman>
+        <full_name>Leon Goretzka</full_name>
+        <squad_status>основной</squad_status>
+        <position>центральный полузащитник</position>
+        <titles_count>20</titles_count>
+        <sport_type>football</sport_type>
+        <rank>КМС</rank>
+    </sportsman>
+    <sportsman>
+        <full_name>Aleksandar Pavlovic</full_name>
+        <squad_status>основной</squad_status>
+        <position>опорный полузащитник</position>
+        <titles_count>9</titles_count>
+        <sport_type>football</sport_type>
+        <rank>2-й разряд</rank>
+    </sportsman>
+    <sportsman>
+        <full_name>Jamal Musiala</full_name>
+        <squad_status>основной</squad_status>
+        <position>атакующий полузащитник</position>
+        <titles_count>17</titles_count>
+        <sport_type>football</sport_type>
+        <rank>КМС</rank>
+    </sportsman>
+    <sportsman>
+        <full_name>Thomas Muller</full_name>
+        <squad_status>основной</squad_status>
+        <position>атакующий полузащитник</position>
+        <titles_count>31</titles_count>
+        <sport_type>football</sport_type>
+        <rank>мастер спорта</rank>
+    </sportsman>
+    <sportsman>
+        <full_name>Kingsley Coman</full_name>
+        <squad_status>основной</squad_status>
+        <position>левый вингер</position>
+        <titles_count>18</titles_count>
+        <sport_type>football</sport_type>
+        <rank>КМС</rank>
+    </sportsman>
+    <sportsman>
+        <full_name>Leroy Sane</full_name>
+        <squad_status>основной</squad_status>
+        <position>правый вингер</position>
+        <titles_count>21</titles_count>
+        <sport_type>football</sport_type>
+        <rank>мастер спорта</rank>
+    </sportsman>
+    <sportsman>
+        <full_name>Serge Gnabry</full_name>
+        <squad_status>запасной</squad_status>
+        <position>правый вингер</position>
+        <titles_count>17</titles_count>
+        <sport_type>football</sport_type>
+        <rank>КМС</rank>
+    </sportsman>
+    <sportsman>
+        <full_name>Mathys Tel</full_name>
+        <squad_status>запасной</squad_status>
+        <position>нападающий</position>
+        <titles_count>8</titles_count>
+        <sport_type>football</sport_type>
+        <rank>2-й разряд</rank>
+    </sportsman>
+    <sportsman>
+        <full_name>Harry Kane</full_name>
+        <squad_status>основной</squad_status>
+        <position>центральный нападающий</position>
+        <titles_count>33</titles_count>
+        <sport_type>football</sport_type>
+        <rank>мастер спорта</rank>
+    </sportsman>
+    <sportsman>
+        <full_name>Bayern Youth Keeper</full_name>
+        <squad_status>п/а</squad_status>
+        <position>вратарь</position>
+        <titles_count>3</titles_count>
+        <sport_type>football</sport_type>
+        <rank>1-й юношеский</rank>
+    </sportsman>
+    <sportsman>
+        <full_name>Bayern Youth Back</full_name>
+        <squad_status>п/а</squad_status>
+        <position>центральный защитник</position>
+        <titles_count>2</titles_count>
+        <sport_type>football</sport_type>
+        <rank>1-й юношеский</rank>
+    </sportsman>
+    <sportsman>
+        <full_name>Bayern Youth Left</full_name>
+        <squad_status>п/а</squad_status>
+        <position>левый защитник</position>
+        <titles_count>1</titles_count>
+        <sport_type>football</sport_type>
+        <rank>1-й юношеский</rank>
+    </sportsman>
+    <sportsman>
+        <full_name>Bayern Youth Right</full_name>
+        <squad_status>п/а</squad_status>
+        <position>правый защитник</position>
+        <titles_count>1</titles_count>
+        <sport_type>football</sport_type>
+        <rank>1-й юношеский</rank>
+    </sportsman>
+    <sportsman>
+        <full_name>Bayern Academy Mid 1</full_name>
+        <squad_status>п/а</squad_status>
+        <position>центральный полузащитник</position>
+        <titles_count>4</titles_count>
+        <sport_type>football</sport_type>
+        <rank>2-й разряд</rank>
+    </sportsman>
+    <sportsman>
+        <full_name>Bayern Academy Mid 2</full_name>
+        <squad_status>п/а</squad_status>
+        <position>атакующий полузащитник</position>
+        <titles_count>3</titles_count>
+        <sport_type>football</sport_type>
+        <rank>2-й разряд</rank>
+    </sportsman>
+    <sportsman>
+        <full_name>Bayern Academy Mid 3</full_name>
+        <squad_status>п/а</squad_status>
+        <position>опорный полузащитник</position>
+        <titles_count>3</titles_count>
+        <sport_type>football</sport_type>
+        <rank>2-й разряд</rank>
+    </sportsman>
+    <sportsman>
+        <full_name>Bayern Academy Wing 1</full_name>
+        <squad_status>п/а</squad_status>
+        <position>левый вингер</position>
+        <titles_count>5</titles_count>
+        <sport_type>football</sport_type>
+        <rank>3-й разряд</rank>
+    </sportsman>
+    <sportsman>
+        <full_name>Bayern Academy Wing 2</full_name>
+        <squad_status>п/а</squad_status>
+        <position>правый вингер</position>
+        <titles_count>4</titles_count>
+        <sport_type>football</sport_type>
+        <rank>3-й разряд</rank>
+    </sportsman>
+    <sportsman>
+        <full_name>Bayern Academy Striker 1</full_name>
+        <squad_status>п/а</squad_status>
+        <position>нападающий</position>
+        <titles_count>6</titles_count>
+        <sport_type>football</sport_type>
+        <rank>2-й разряд</rank>
+    </sportsman>
+    <sportsman>
+        <full_name>Bayern Academy Striker 2</full_name>
+        <squad_status>п/а</squad_status>
+        <position>нападающий</position>
+        <titles_count>4</titles_count>
+        <sport_type>football</sport_type>
+        <rank>3-й разряд</rank>
+    </sportsman>
+    <sportsman>
+        <full_name>Bayern Academy Utility</full_name>
+        <squad_status>п/а</squad_status>
+        <position>универсал</position>
+        <titles_count>2</titles_count>
+        <sport_type>football</sport_type>
+        <rank>1-й юношеский</rank>
+    </sportsman>
+    <sportsman>
+        <full_name>Bayern Women Keeper</full_name>
+        <squad_status>основной</squad_status>
+        <position>вратарь</position>
+        <titles_count>14</titles_count>
+        <sport_type>football</sport_type>
+        <rank>КМС</rank>
+    </sportsman>
+    <sportsman>
+        <full_name>Bayern Women Back 1</full_name>
+        <squad_status>основной</squad_status>
+        <position>центральный защитник</position>
+        <titles_count>12</titles_count>
+        <sport_type>football</sport_type>
+        <rank>КМС</rank>
+    </sportsman>
+    <sportsman>
+        <full_name>Bayern Women Back 2</full_name>
+        <squad_status>основной</squad_status>
+        <position>левый защитник</position>
+        <titles_count>11</titles_count>
+        <sport_type>football</sport_type>
+        <rank>2-й разряд</rank>
+    </sportsman>
+    <sportsman>
+        <full_name>Bayern Women Back 3</full_name>
+        <squad_status>основной</squad_status>
+        <position>правый защитник</position>
+        <titles_count>10</titles_count>
+        <sport_type>football</sport_type>
+        <rank>2-й разряд</rank>
+    </sportsman>
+    <sportsman>
+        <full_name>Bayern Women Mid 1</full_name>
+        <squad_status>основной</squad_status>
+        <position>центральный полузащитник</position>
+        <titles_count>16</titles_count>
+        <sport_type>football</sport_type>
+        <rank>КМС</rank>
+    </sportsman>
+    <sportsman>
+        <full_name>Bayern Women Mid 2</full_name>
+        <squad_status>основной</squad_status>
+        <position>опорный полузащитник</position>
+        <titles_count>15</titles_count>
+        <sport_type>football</sport_type>
+        <rank>КМС</rank>
+    </sportsman>
+    <sportsman>
+        <full_name>Bayern Women Mid 3</full_name>
+        <squad_status>основной</squad_status>
+        <position>атакующий полузащитник</position>
+        <titles_count>18</titles_count>
+        <sport_type>football</sport_type>
+        <rank>мастер спорта</rank>
+    </sportsman>
+    <sportsman>
+        <full_name>Bayern Women Wing 1</full_name>
+        <squad_status>основной</squad_status>
+        <position>левый вингер</position>
+        <titles_count>13</titles_count>
+        <sport_type>football</sport_type>
+        <rank>КМС</rank>
+    </sportsman>
+    <sportsman>
+        <full_name>Bayern Women Wing 2</full_name>
+        <squad_status>основной</squad_status>
+        <position>правый вингер</position>
+        <titles_count>14</titles_count>
+        <sport_type>football</sport_type>
+        <rank>КМС</rank>
+    </sportsman>
+    <sportsman>
+        <full_name>Bayern Women Striker 1</full_name>
+        <squad_status>основной</squad_status>
+        <position>нападающий</position>
+        <titles_count>19</titles_count>
+        <sport_type>football</sport_type>
+        <rank>мастер спорта</rank>
+    </sportsman>
+    <sportsman>
+        <full_name>Bayern Women Striker 2</full_name>
+        <squad_status>запасной</squad_status>
+        <position>нападающий</position>
+        <titles_count>9</titles_count>
+        <sport_type>football</sport_type>
+        <rank>2-й разряд</rank>
+    </sportsman>
+    <sportsman>
+        <full_name>Bayern Women Reserve 1</full_name>
+        <squad_status>запасной</squad_status>
+        <position>центральный защитник</position>
+        <titles_count>7</titles_count>
+        <sport_type>football</sport_type>
+        <rank>3-й разряд</rank>
+    </sportsman>
+    <sportsman>
+        <full_name>Bayern Women Reserve 2</full_name>
+        <squad_status>запасной</squad_status>
+        <position>центральный полузащитник</position>
+        <titles_count>8</titles_count>
+        <sport_type>football</sport_type>
+        <rank>3-й разряд</rank>
+    </sportsman>
+    <sportsman>
+        <full_name>Bayern Women Reserve 3</full_name>
+        <squad_status>запасной</squad_status>
+        <position>вингер</position>
+        <titles_count>7</titles_count>
+        <sport_type>football</sport_type>
+        <rank>3-й разряд</rank>
+    </sportsman>
+    <sportsman>
+        <full_name>Bayern Legends Keeper</full_name>
+        <squad_status>запасной</squad_status>
+        <position>вратарь</position>
+        <titles_count>35</titles_count>
+        <sport_type>football</sport_type>
+        <rank>мастер спорта</rank>
+    </sportsman>
+    <sportsman>
+        <full_name>Bayern Legends Back</full_name>
+        <squad_status>запасной</squad_status>
+        <position>центральный защитник</position>
+        <titles_count>32</titles_count>
+        <sport_type>football</sport_type>
+        <rank>мастер спорта</rank>
+    </sportsman>
+    <sportsman>
+        <full_name>Bayern Legends Mid</full_name>
+        <squad_status>запасной</squad_status>
+        <position>центральный полузащитник</position>
+        <titles_count>37</titles_count>
+        <sport_type>football</sport_type>
+        <rank>мастер спорта</rank>
+    </sportsman>
+    <sportsman>
+        <full_name>Bayern Legends Wing</full_name>
+        <squad_status>запасной</squad_status>
+        <position>правый вингер</position>
+        <titles_count>29</titles_count>
+        <sport_type>football</sport_type>
+        <rank>мастер спорта</rank>
+    </sportsman>
+    <sportsman>
+        <full_name>Bayern Legends Striker</full_name>
+        <squad_status>запасной</squad_status>
+        <position>нападающий</position>
+        <titles_count>41</titles_count>
+        <sport_type>football</sport_type>
+        <rank>мастер спорта</rank>
+    </sportsman>
+    <sportsman>
+        <full_name>Bayern Analyst Player 1</full_name>
+        <squad_status>п/а</squad_status>
+        <position>плеймейкер</position>
+        <titles_count>5</titles_count>
+        <sport_type>football</sport_type>
+        <rank>2-й разряд</rank>
+    </sportsman>
+    <sportsman>
+        <full_name>Bayern Analyst Player 2</full_name>
+        <squad_status>п/а</squad_status>
+        <position>опорный полузащитник</position>
+        <titles_count>6</titles_count>
+        <sport_type>football</sport_type>
+        <rank>2-й разряд</rank>
+    </sportsman>
+    <sportsman>
+        <full_name>Bayern Analyst Player 3</full_name>
+        <squad_status>п/а</squad_status>
+        <position>центральный защитник</position>
+        <titles_count>4</titles_count>
+        <sport_type>football</sport_type>
+        <rank>3-й разряд</rank>
+    </sportsman>
+    <sportsman>
+        <full_name>Bayern Analyst Player 4</full_name>
+        <squad_status>п/а</squad_status>
+        <position>правый защитник</position>
+        <titles_count>3</titles_count>
+        <sport_type>football</sport_type>
+        <rank>1-й юношеский</rank>
+    </sportsman>
+    <sportsman>
+        <full_name>Bayern Analyst Player 5</full_name>
+        <squad_status>п/а</squad_status>
+        <position>левый защитник</position>
+        <titles_count>3</titles_count>
+        <sport_type>football</sport_type>
+        <rank>1-й юношеский</rank>
+    </sportsman>
+    <sportsman>
+        <full_name>Bayern Analyst Player 6</full_name>
+        <squad_status>п/а</squad_status>
+        <position>атакующий полузащитник</position>
+        <titles_count>7</titles_count>
+        <sport_type>football</sport_type>
+        <rank>2-й разряд</rank>
+    </sportsman>
+    <sportsman>
+        <full_name>Bayern Analyst Player 7</full_name>
+        <squad_status>п/а</squad_status>
+        <position>вингер</position>
+        <titles_count>6</titles_count>
+        <sport_type>football</sport_type>
+        <rank>3-й разряд</rank>
+    </sportsman>
+    <sportsman>
+        <full_name>Bayern Analyst Player 8</full_name>
+        <squad_status>п/а</squad_status>
+        <position>нападающий</position>
+        <titles_count>8</titles_count>
+        <sport_type>football</sport_type>
+        <rank>2-й разряд</rank>
+    </sportsman>
+    <sportsman>
+        <full_name>Bayern Analyst Player 9</full_name>
+        <squad_status>п/а</squad_status>
+        <position>вратарь</position>
+        <titles_count>4</titles_count>
+        <sport_type>football</sport_type>
+        <rank>1-й юношеский</rank>
+    </sportsman>
+    <sportsman>
+        <full_name>Bayern Analyst Player 10</full_name>
+        <squad_status>п/а</squad_status>
+        <position>универсал</position>
+        <titles_count>5</titles_count>
+        <sport_type>football</sport_type>
+        <rank>2-й разряд</rank>
+    </sportsman>
+</sportsmen>

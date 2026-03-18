@@ -1,0 +1,475 @@
+<?xml version="1.0" ?>
+<sportsmen>
+    <sportsman>
+        <full_name>Bayern Guard Alpha</full_name>
+        <squad_status>основной</squad_status>
+        <position>разыгрывающий</position>
+        <titles_count>14</titles_count>
+        <sport_type>basketball</sport_type>
+        <rank>КМС</rank>
+    </sportsman>
+    <sportsman>
+        <full_name>Bayern Guard Beta</full_name>
+        <squad_status>основной</squad_status>
+        <position>атакующий защитник</position>
+        <titles_count>12</titles_count>
+        <sport_type>basketball</sport_type>
+        <rank>КМС</rank>
+    </sportsman>
+    <sportsman>
+        <full_name>Bayern Forward Alpha</full_name>
+        <squad_status>основной</squad_status>
+        <position>легкий форвард</position>
+        <titles_count>15</titles_count>
+        <sport_type>basketball</sport_type>
+        <rank>мастер спорта</rank>
+    </sportsman>
+    <sportsman>
+        <full_name>Bayern Forward Beta</full_name>
+        <squad_status>основной</squad_status>
+        <position>тяжелый форвард</position>
+        <titles_count>13</titles_count>
+        <sport_type>basketball</sport_type>
+        <rank>КМС</rank>
+    </sportsman>
+    <sportsman>
+        <full_name>Bayern Center Alpha</full_name>
+        <squad_status>основной</squad_status>
+        <position>центровой</position>
+        <titles_count>16</titles_count>
+        <sport_type>basketball</sport_type>
+        <rank>мастер спорта</rank>
+    </sportsman>
+    <sportsman>
+        <full_name>Bayern Sixth Man</full_name>
+        <squad_status>запасной</squad_status>
+        <position>атакующий защитник</position>
+        <titles_count>9</titles_count>
+        <sport_type>basketball</sport_type>
+        <rank>2-й разряд</rank>
+    </sportsman>
+    <sportsman>
+        <full_name>Bayern Bench Guard</full_name>
+        <squad_status>запасной</squad_status>
+        <position>разыгрывающий</position>
+        <titles_count>8</titles_count>
+        <sport_type>basketball</sport_type>
+        <rank>2-й разряд</rank>
+    </sportsman>
+    <sportsman>
+        <full_name>Bayern Bench Wing</full_name>
+        <squad_status>запасной</squad_status>
+        <position>легкий форвард</position>
+        <titles_count>7</titles_count>
+        <sport_type>basketball</sport_type>
+        <rank>3-й разряд</rank>
+    </sportsman>
+    <sportsman>
+        <full_name>Bayern Bench Big</full_name>
+        <squad_status>запасной</squad_status>
+        <position>центровой</position>
+        <titles_count>8</titles_count>
+        <sport_type>basketball</sport_type>
+        <rank>2-й разряд</rank>
+    </sportsman>
+    <sportsman>
+        <full_name>Bayern Prospect 1</full_name>
+        <squad_status>п/а</squad_status>
+        <position>разыгрывающий</position>
+        <titles_count>4</titles_count>
+        <sport_type>basketball</sport_type>
+        <rank>1-й юношеский</rank>
+    </sportsman>
+    <sportsman>
+        <full_name>Bayern Prospect 2</full_name>
+        <squad_status>п/а</squad_status>
+        <position>атакующий защитник</position>
+        <titles_count>3</titles_count>
+        <sport_type>basketball</sport_type>
+        <rank>1-й юношеский</rank>
+    </sportsman>
+    <sportsman>
+        <full_name>Bayern Prospect 3</full_name>
+        <squad_status>п/а</squad_status>
+        <position>легкий форвард</position>
+        <titles_count>5</titles_count>
+        <sport_type>basketball</sport_type>
+        <rank>2-й разряд</rank>
+    </sportsman>
+    <sportsman>
+        <full_name>Bayern Prospect 4</full_name>
+        <squad_status>п/а</squad_status>
+        <position>тяжелый форвард</position>
+        <titles_count>4</titles_count>
+        <sport_type>basketball</sport_type>
+        <rank>2-й разряд</rank>
+    </sportsman>
+    <sportsman>
+        <full_name>Bayern Prospect 5</full_name>
+        <squad_status>п/а</squad_status>
+        <position>центровой</position>
+        <titles_count>3</titles_count>
+        <sport_type>basketball</sport_type>
+        <rank>1-й юношеский</rank>
+    </sportsman>
+    <sportsman>
+        <full_name>Bayern Handball GK 1</full_name>
+        <squad_status>основной</squad_status>
+        <position>вратарь</position>
+        <titles_count>18</titles_count>
+        <sport_type>handball</sport_type>
+        <rank>мастер спорта</rank>
+    </sportsman>
+    <sportsman>
+        <full_name>Bayern Handball Wing L1</full_name>
+        <squad_status>основной</squad_status>
+        <position>левый крайний</position>
+        <titles_count>14</titles_count>
+        <sport_type>handball</sport_type>
+        <rank>КМС</rank>
+    </sportsman>
+    <sportsman>
+        <full_name>Bayern Handball Wing R1</full_name>
+        <squad_status>основной</squad_status>
+        <position>правый крайний</position>
+        <titles_count>13</titles_count>
+        <sport_type>handball</sport_type>
+        <rank>КМС</rank>
+    </sportsman>
+    <sportsman>
+        <full_name>Bayern Handball Back L1</full_name>
+        <squad_status>основной</squad_status>
+        <position>левый полусредний</position>
+        <titles_count>16</titles_count>
+        <sport_type>handball</sport_type>
+        <rank>мастер спорта</rank>
+    </sportsman>
+    <sportsman>
+        <full_name>Bayern Handball Back C1</full_name>
+        <squad_status>основной</squad_status>
+        <position>разыгрывающий</position>
+        <titles_count>17</titles_count>
+        <sport_type>handball</sport_type>
+        <rank>мастер спорта</rank>
+    </sportsman>
+    <sportsman>
+        <full_name>Bayern Handball Back R1</full_name>
+        <squad_status>основной</squad_status>
+        <position>правый полусредний</position>
+        <titles_count>15</titles_count>
+        <sport_type>handball</sport_type>
+        <rank>КМС</rank>
+    </sportsman>
+    <sportsman>
+        <full_name>Bayern Handball Pivot 1</full_name>
+        <squad_status>основной</squad_status>
+        <position>линейный</position>
+        <titles_count>12</titles_count>
+        <sport_type>handball</sport_type>
+        <rank>КМС</rank>
+    </sportsman>
+    <sportsman>
+        <full_name>Bayern Handball Reserve 1</full_name>
+        <squad_status>запасной</squad_status>
+        <position>вратарь</position>
+        <titles_count>8</titles_count>
+        <sport_type>handball</sport_type>
+        <rank>2-й разряд</rank>
+    </sportsman>
+    <sportsman>
+        <full_name>Bayern Handball Reserve 2</full_name>
+        <squad_status>запасной</squad_status>
+        <position>левый крайний</position>
+        <titles_count>7</titles_count>
+        <sport_type>handball</sport_type>
+        <rank>3-й разряд</rank>
+    </sportsman>
+    <sportsman>
+        <full_name>Bayern Handball Reserve 3</full_name>
+        <squad_status>запасной</squad_status>
+        <position>разыгрывающий</position>
+        <titles_count>9</titles_count>
+        <sport_type>handball</sport_type>
+        <rank>2-й разряд</rank>
+    </sportsman>
+    <sportsman>
+        <full_name>Bayern Handball Reserve 4</full_name>
+        <squad_status>запасной</squad_status>
+        <position>линейный</position>
+        <titles_count>8</titles_count>
+        <sport_type>handball</sport_type>
+        <rank>2-й разряд</rank>
+    </sportsman>
+    <sportsman>
+        <full_name>Bayern Handball Youth 1</full_name>
+        <squad_status>п/а</squad_status>
+        <position>левый полусредний</position>
+        <titles_count>4</titles_count>
+        <sport_type>handball</sport_type>
+        <rank>1-й юношеский</rank>
+    </sportsman>
+    <sportsman>
+        <full_name>Bayern Handball Youth 2</full_name>
+        <squad_status>п/а</squad_status>
+        <position>правый полусредний</position>
+        <titles_count>5</titles_count>
+        <sport_type>handball</sport_type>
+        <rank>2-й разряд</rank>
+    </sportsman>
+    <sportsman>
+        <full_name>Bayern Handball Youth 3</full_name>
+        <squad_status>п/а</squad_status>
+        <position>крайний</position>
+        <titles_count>3</titles_count>
+        <sport_type>handball</sport_type>
+        <rank>1-й юношеский</rank>
+    </sportsman>
+    <sportsman>
+        <full_name>Bayern Volley Setter 1</full_name>
+        <squad_status>основной</squad_status>
+        <position>связующий</position>
+        <titles_count>13</titles_count>
+        <sport_type>volleyball</sport_type>
+        <rank>КМС</rank>
+    </sportsman>
+    <sportsman>
+        <full_name>Bayern Volley Opposite 1</full_name>
+        <squad_status>основной</squad_status>
+        <position>диагональный</position>
+        <titles_count>15</titles_count>
+        <sport_type>volleyball</sport_type>
+        <rank>мастер спорта</rank>
+    </sportsman>
+    <sportsman>
+        <full_name>Bayern Volley MB 1</full_name>
+        <squad_status>основной</squad_status>
+        <position>центральный блокирующий</position>
+        <titles_count>14</titles_count>
+        <sport_type>volleyball</sport_type>
+        <rank>КМС</rank>
+    </sportsman>
+    <sportsman>
+        <full_name>Bayern Volley MB 2</full_name>
+        <squad_status>основной</squad_status>
+        <position>центральный блокирующий</position>
+        <titles_count>13</titles_count>
+        <sport_type>volleyball</sport_type>
+        <rank>КМС</rank>
+    </sportsman>
+    <sportsman>
+        <full_name>Bayern Volley OH 1</full_name>
+        <squad_status>основной</squad_status>
+        <position>доигровщик</position>
+        <titles_count>12</titles_count>
+        <sport_type>volleyball</sport_type>
+        <rank>КМС</rank>
+    </sportsman>
+    <sportsman>
+        <full_name>Bayern Volley OH 2</full_name>
+        <squad_status>основной</squad_status>
+        <position>доигровщик</position>
+        <titles_count>11</titles_count>
+        <sport_type>volleyball</sport_type>
+        <rank>2-й разряд</rank>
+    </sportsman>
+    <sportsman>
+        <full_name>Bayern Volley Libero 1</full_name>
+        <squad_status>основной</squad_status>
+        <position>либеро</position>
+        <titles_count>10</titles_count>
+        <sport_type>volleyball</sport_type>
+        <rank>2-й разряд</rank>
+    </sportsman>
+    <sportsman>
+        <full_name>Bayern Volley Bench 1</full_name>
+        <squad_status>запасной</squad_status>
+        <position>связующий</position>
+        <titles_count>7</titles_count>
+        <sport_type>volleyball</sport_type>
+        <rank>3-й разряд</rank>
+    </sportsman>
+    <sportsman>
+        <full_name>Bayern Volley Bench 2</full_name>
+        <squad_status>запасной</squad_status>
+        <position>диагональный</position>
+        <titles_count>8</titles_count>
+        <sport_type>volleyball</sport_type>
+        <rank>2-й разряд</rank>
+    </sportsman>
+    <sportsman>
+        <full_name>Bayern Volley Bench 3</full_name>
+        <squad_status>запасной</squad_status>
+        <position>доигровщик</position>
+        <titles_count>7</titles_count>
+        <sport_type>volleyball</sport_type>
+        <rank>3-й разряд</rank>
+    </sportsman>
+    <sportsman>
+        <full_name>Bayern Volley Youth 1</full_name>
+        <squad_status>п/а</squad_status>
+        <position>либеро</position>
+        <titles_count>4</titles_count>
+        <sport_type>volleyball</sport_type>
+        <rank>1-й юношеский</rank>
+    </sportsman>
+    <sportsman>
+        <full_name>Bayern Volley Youth 2</full_name>
+        <squad_status>п/а</squad_status>
+        <position>центральный блокирующий</position>
+        <titles_count>3</titles_count>
+        <sport_type>volleyball</sport_type>
+        <rank>1-й юношеский</rank>
+    </sportsman>
+    <sportsman>
+        <full_name>Bayern E-Sports Rifler 1</full_name>
+        <squad_status>основной</squad_status>
+        <position>rifler</position>
+        <titles_count>18</titles_count>
+        <sport_type>esports</sport_type>
+        <rank>мастер спорта</rank>
+    </sportsman>
+    <sportsman>
+        <full_name>Bayern E-Sports Rifler 2</full_name>
+        <squad_status>основной</squad_status>
+        <position>rifler</position>
+        <titles_count>16</titles_count>
+        <sport_type>esports</sport_type>
+        <rank>КМС</rank>
+    </sportsman>
+    <sportsman>
+        <full_name>Bayern E-Sports AWP 1</full_name>
+        <squad_status>основной</squad_status>
+        <position>sniper</position>
+        <titles_count>19</titles_count>
+        <sport_type>esports</sport_type>
+        <rank>мастер спорта</rank>
+    </sportsman>
+    <sportsman>
+        <full_name>Bayern E-Sports IGL 1</full_name>
+        <squad_status>основной</squad_status>
+        <position>captain</position>
+        <titles_count>17</titles_count>
+        <sport_type>esports</sport_type>
+        <rank>КМС</rank>
+    </sportsman>
+    <sportsman>
+        <full_name>Bayern E-Sports Support 1</full_name>
+        <squad_status>основной</squad_status>
+        <position>support</position>
+        <titles_count>15</titles_count>
+        <sport_type>esports</sport_type>
+        <rank>КМС</rank>
+    </sportsman>
+    <sportsman>
+        <full_name>Bayern E-Sports Bench 1</full_name>
+        <squad_status>запасной</squad_status>
+        <position>rifler</position>
+        <titles_count>9</titles_count>
+        <sport_type>esports</sport_type>
+        <rank>2-й разряд</rank>
+    </sportsman>
+    <sportsman>
+        <full_name>Bayern E-Sports Bench 2</full_name>
+        <squad_status>запасной</squad_status>
+        <position>support</position>
+        <titles_count>8</titles_count>
+        <sport_type>esports</sport_type>
+        <rank>2-й разряд</rank>
+    </sportsman>
+    <sportsman>
+        <full_name>Bayern E-Sports Academy 1</full_name>
+        <squad_status>п/а</squad_status>
+        <position>sniper</position>
+        <titles_count>5</titles_count>
+        <sport_type>esports</sport_type>
+        <rank>3-й разряд</rank>
+    </sportsman>
+    <sportsman>
+        <full_name>Bayern E-Sports Academy 2</full_name>
+        <squad_status>п/а</squad_status>
+        <position>rifler</position>
+        <titles_count>4</titles_count>
+        <sport_type>esports</sport_type>
+        <rank>1-й юношеский</rank>
+    </sportsman>
+    <sportsman>
+        <full_name>Bayern Athletics Sprinter 1</full_name>
+        <squad_status>основной</squad_status>
+        <position>спринтер</position>
+        <titles_count>14</titles_count>
+        <sport_type>athletics</sport_type>
+        <rank>КМС</rank>
+    </sportsman>
+    <sportsman>
+        <full_name>Bayern Athletics Sprinter 2</full_name>
+        <squad_status>основной</squad_status>
+        <position>спринтер</position>
+        <titles_count>13</titles_count>
+        <sport_type>athletics</sport_type>
+        <rank>КМС</rank>
+    </sportsman>
+    <sportsman>
+        <full_name>Bayern Athletics Jumper 1</full_name>
+        <squad_status>основной</squad_status>
+        <position>прыгун в длину</position>
+        <titles_count>12</titles_count>
+        <sport_type>athletics</sport_type>
+        <rank>2-й разряд</rank>
+    </sportsman>
+    <sportsman>
+        <full_name>Bayern Athletics Thrower 1</full_name>
+        <squad_status>основной</squad_status>
+        <position>метатель</position>
+        <titles_count>11</titles_count>
+        <sport_type>athletics</sport_type>
+        <rank>2-й разряд</rank>
+    </sportsman>
+    <sportsman>
+        <full_name>Bayern Athletics Runner 1</full_name>
+        <squad_status>основной</squad_status>
+        <position>бегун на 800 м</position>
+        <titles_count>15</titles_count>
+        <sport_type>athletics</sport_type>
+        <rank>КМС</rank>
+    </sportsman>
+    <sportsman>
+        <full_name>Bayern Athletics Runner 2</full_name>
+        <squad_status>основной</squad_status>
+        <position>бегун на 1500 м</position>
+        <titles_count>16</titles_count>
+        <sport_type>athletics</sport_type>
+        <rank>КМС</rank>
+    </sportsman>
+    <sportsman>
+        <full_name>Bayern Athletics Reserve 1</full_name>
+        <squad_status>запасной</squad_status>
+        <position>спринтер</position>
+        <titles_count>8</titles_count>
+        <sport_type>athletics</sport_type>
+        <rank>3-й разряд</rank>
+    </sportsman>
+    <sportsman>
+        <full_name>Bayern Athletics Reserve 2</full_name>
+        <squad_status>запасной</squad_status>
+        <position>метатель</position>
+        <titles_count>7</titles_count>
+        <sport_type>athletics</sport_type>
+        <rank>3-й разряд</rank>
+    </sportsman>
+    <sportsman>
+        <full_name>Bayern Athletics Youth 1</full_name>
+        <squad_status>п/а</squad_status>
+        <position>бегун</position>
+        <titles_count>4</titles_count>
+        <sport_type>athletics</sport_type>
+        <rank>1-й юношеский</rank>
+    </sportsman>
+    <sportsman>
+        <full_name>Bayern Athletics Youth 2</full_name>
+        <squad_status>п/а</squad_status>
+        <position>прыгун</position>
+        <titles_count>3</titles_count>
+        <sport_type>athletics</sport_type>
+        <rank>1-й юношеский</rank>
+    </sportsman>
+</sportsmen>
