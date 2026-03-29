@@ -1,0 +1,117 @@
+:root {
+    --bg: #0f1115;
+    --panel: #181c23;
+    --panel-2: #202632;
+    --text: #eef2f7;
+    --muted: #aeb7c6;
+    --accent: #d62839;
+    --accent-dark: #a61f2d;
+    --border: #2d3645;
+    --success: #173b28;
+    --error: #4c1f28;
+}
+
+* { box-sizing: border-box; }
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(180deg, #0f1115 0%, #131922 100%);
+    color: var(--text);
+}
+
+.wrapper {
+    width: min(1180px, calc(100% - 32px));
+    margin: 0 auto 32px;
+}
+
+.page-header {
+    background: linear-gradient(135deg, #171b22, #251219);
+    border-bottom: 1px solid var(--border);
+    padding: 28px 16px;
+    margin-bottom: 24px;
+}
+
+.page-header h1 { margin: 0 0 8px; }
+.page-header p { margin: 0; color: var(--muted); }
+
+.card {
+    background: rgba(24, 28, 35, 0.96);
+    border: 1px solid var(--border);
+    border-radius: 18px;
+    padding: 20px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.24);
+}
+
+.stats-grid,
+.forms-grid {
+    display: grid;
+    gap: 16px;
+    margin-bottom: 16px;
+}
+
+.stats-grid { grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); }
+.forms-grid { grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); }
+
+.stat-card span {
+    display: block;
+    color: var(--muted);
+    margin-bottom: 8px;
+}
+
+.stat-card strong {
+    font-size: 32px;
+}
+
+.form-grid {
+    display: grid;
+    gap: 12px;
+}
+
+input, select, button {
+    width: 100%;
+    border-radius: 12px;
+    border: 1px solid var(--border);
+    background: var(--panel-2);
+    color: var(--text);
+    padding: 12px 14px;
+    font-size: 15px;
+}
+
+button {
+    background: var(--accent);
+    border: none;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+button:hover { background: var(--accent-dark); }
+.danger-button { margin-top: 12px; max-width: 220px; }
+
+.alerts { margin-bottom: 16px; }
+.alert {
+    border-radius: 14px;
+    padding: 14px 16px;
+    margin-bottom: 10px;
+    border: 1px solid var(--border);
+}
+.alert.success { background: var(--success); }
+.alert.error { background: var(--error); }
+
+.table-wrapper { overflow-x: auto; }
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+th, td {
+    text-align: left;
+    padding: 12px;
+    border-bottom: 1px solid var(--border);
+}
+th { color: var(--muted); }
+.info-block {
+    margin-top: 14px;
+    background: #141922;
+    border-radius: 12px;
+    padding: 12px;
+    border: 1px solid var(--border);
+}

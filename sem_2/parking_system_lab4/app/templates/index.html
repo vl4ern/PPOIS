@@ -1,0 +1,142 @@
+{% extends "base.html" %}
+
+{% block title %}Главная | Автостоянка 78{% endblock %}
+
+{% block content %}
+<section class="stats-grid">
+    <article class="card stat-card">
+        <span>Всего мест</span>
+        <strong>{{ stats.total_spots }}</strong>
+    </article>
+    <article class="card stat-card">
+        <span>Занято</span>
+        <strong>{{ stats.occupied_spots }}</strong>
+    </article>
+    <article class="card stat-card">
+        <span>Свободно</span>
+        <strong>{{ stats.free_spots }}</strong>
+    </article>
+    <article class="card stat-card">
+        <span>Доход</span>
+        <strong>{{ stats.income }} $</strong>
+    </article>
+</section>
+
+<section class="card">
+    <h2>Состояние модели</h2>
+    <p><strong>Процент занятости:</strong> {{ stats.occupancy_rate }}%</p>
+    <p><strong>Свободные места:</strong> {{ stats.free_spots_list | join(', ') if stats.free_spots_list else 'нет' }}</p>
+    <p><strong>Рекомендация:</strong> {{ stats.recommendation }}</p>
+    <form action="{{ url_for('reset_income') }}" method="post">
+        <button class="danger-button" type="submit">Сбросить доход</button>
+    </form>
+</section>
+
+<section class="forms-grid">
+    <article class="card">
+        <h2>Разместить автомобиль</h2>
+        <form action="{{ url_for('park_car') }}" method="post" class="form-grid">
+            <input name="license_plate" placeholder="Номер автомобиля" required>
+            <input name="model" placeholder="Модель" required>
+            <input name="year" type="number" placeholder="Год выпуска" min="1900" max="2100" required>
+            <input name="owner" placeholder="Владелец" required>
+            <select name="spot_id" required>
+                {% for spot_id in stats.free_spots_list %}
+                    <option value="{{ spot_id }}">{{ spot_id }}</option>
+                {% endfor %}
+            </select>
+            <button type="submit">Разместить</button>
+        </form>
+    </article>
+
+    <article class="card">
+        <h2>Оплатить парковку</h2>
+        <form action="{{ url_for('pay_car') }}" method="post" class="form-grid">
+            <input name="license_plate" placeholder="Номер автомобиля" required>
+            <select name="tariff_id" required>
+                {% for tariff in tariffs %}
+                    <option value="{{ tariff.id }}">{{ tariff.name }} — {{ tariff.price }} $</option>
+                {% endfor %}
+            </select>
+            <button type="submit">Оплатить</button>
+        </form>
+    </article>
+
+    <article class="card">
+        <h2>Добавить услугу</h2>
+        <form action="{{ url_for('add_service') }}" method="post" class="form-grid">
+            <input name="license_plate" placeholder="Номер автомобиля" required>
+            <select name="service_id" required>
+                {% for service in services %}
+                    <option value="{{ service.id }}">{{ service.name }} — {{ service.price }} $</option>
+                {% endfor %}
+            </select>
+            <button type="submit">Добавить услугу</button>
+        </form>
+    </article>
+
+    <article class="card">
+        <h2>Выдать автомобиль</h2>
+        <form action="{{ url_for('remove_car') }}" method="post" class="form-grid">
+            <input name="license_plate" placeholder="Номер автомобиля" required>
+            <button type="submit">Выдать автомобиль</button>
+        </form>
+    </article>
+
+    <article class="card">
+        <h2>Проверка охраны</h2>
+        <form action="{{ url_for('security') }}" method="post" class="form-grid">
+            <input name="license_plate" placeholder="Номер автомобиля" required>
+            <button type="submit">Проверить</button>
+        </form>
+        {% if security_info %}
+            <div class="info-block">
+                <p><strong>Номер:</strong> {{ security_info.license_plate }}</p>
+                <p><strong>Владелец:</strong> {{ security_info.owner }}</p>
+                <p><strong>Место:</strong> {{ security_info.spot_id }}</p>
+                <p><strong>Время въезда:</strong> {{ security_info.entry_time }}</p>
+                <p><strong>Охрана:</strong> {{ security_info.security_status }}</p>
+                <p><strong>Услуги:</strong> {{ security_info.services | join(', ') if security_info.services else 'нет' }}</p>
+            </div>
+        {% endif %}
+    </article>
+</section>
+
+<section class="card">
+    <h2>Автомобили на парковке</h2>
+    {% if cars %}
+    <div class="table-wrapper">
+        <table>
+            <thead>
+                <tr>
+                    <th>Номер</th>
+                    <th>Модель</th>
+                    <th>Год</th>
+                    <th>Владелец</th>
+                    <th>Место</th>
+                    <th>Время въезда</th>
+                    <th>Оплачено</th>
+                    <th>Услуги</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for car in cars %}
+                <tr>
+                    <td>{{ car.license_plate }}</td>
+                    <td>{{ car.model }}</td>
+                    <td>{{ car.year }}</td>
+                    <td>{{ car.owner }}</td>
+                    <td>{{ car.spot_id }}</td>
+                    <td>{{ car.entry_time }}</td>
+                    <td>{{ 'Да' if car.paid else 'Нет' }}</td>
+                    <td>{{ car.services | join(', ') if car.services else '—' }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+    {% else %}
+        <p>На парковке пока нет автомобилей.</p>
+    {% endif %}
+</section>
+{% endblock %}

@@ -1,0 +1,148 @@
+{
+  "name": "Модель автостоянки",
+  "spots": {
+    "A01": {
+      "spot_id": "A01",
+      "is_occupied": false,
+      "car_plate": null,
+      "tariff_id": "standard"
+    },
+    "A02": {
+      "spot_id": "A02",
+      "is_occupied": false,
+      "car_plate": null,
+      "tariff_id": "standard"
+    },
+    "A03": {
+      "spot_id": "A03",
+      "is_occupied": false,
+      "car_plate": null,
+      "tariff_id": "standard"
+    },
+    "A04": {
+      "spot_id": "A04",
+      "is_occupied": false,
+      "car_plate": null,
+      "tariff_id": "standard"
+    },
+    "A05": {
+      "spot_id": "A05",
+      "is_occupied": false,
+      "car_plate": null,
+      "tariff_id": "standard"
+    },
+    "A06": {
+      "spot_id": "A06",
+      "is_occupied": false,
+      "car_plate": null,
+      "tariff_id": "standard"
+    },
+    "A07": {
+      "spot_id": "A07",
+      "is_occupied": false,
+      "car_plate": null,
+      "tariff_id": "standard"
+    },
+    "A08": {
+      "spot_id": "A08",
+      "is_occupied": false,
+      "car_plate": null,
+      "tariff_id": "standard"
+    },
+    "A09": {
+      "spot_id": "A09",
+      "is_occupied": false,
+      "car_plate": null,
+      "tariff_id": "standard"
+    },
+    "A10": {
+      "spot_id": "A10",
+      "is_occupied": false,
+      "car_plate": null,
+      "tariff_id": "standard"
+    },
+    "A11": {
+      "spot_id": "A11",
+      "is_occupied": false,
+      "car_plate": null,
+      "tariff_id": "standard"
+    },
+    "A12": {
+      "spot_id": "A12",
+      "is_occupied": false,
+      "car_plate": null,
+      "tariff_id": "standard"
+    },
+    "A13": {
+      "spot_id": "A13",
+      "is_occupied": false,
+      "car_plate": null,
+      "tariff_id": "standard"
+    },
+    "A14": {
+      "spot_id": "A14",
+      "is_occupied": false,
+      "car_plate": null,
+      "tariff_id": "standard"
+    }
+  },
+  "cars": {},
+  "tariffs": {
+    "standard": {
+      "tariff_id": "standard",
+      "name": "Стандартный (1 час)",
+      "price": 2.0,
+      "min_time": 1,
+      "max_time": 1
+    },
+    "four_hours": {
+      "tariff_id": "four_hours",
+      "name": "Увеличенный (4 часа)",
+      "price": 7.0,
+      "min_time": 4,
+      "max_time": 4
+    },
+    "day": {
+      "tariff_id": "day",
+      "name": "Суточный",
+      "price": 40.0,
+      "min_time": 24,
+      "max_time": 24
+    },
+    "three_days": {
+      "tariff_id": "three_days",
+      "name": "Трех дневный",
+      "price": 125.0,
+      "min_time": 72,
+      "max_time": 72
+    }
+  },
+  "services": {
+    "wash": {
+      "service_id": "wash",
+      "name": "Мойка авто",
+      "price": 230.0,
+      "description": "Полная мойка автомобиля."
+    },
+    "charge": {
+      "service_id": "charge",
+      "name": "Зарядка авто",
+      "price": 140.0,
+      "description": "Зарядка электрокара."
+    },
+    "wifi": {
+      "service_id": "wifi",
+      "name": "Wi-fi на парковке",
+      "price": 15.0,
+      "description": "Высокоскоростной интернет по всей территории автостоянки."
+    },
+    "security": {
+      "service_id": "security",
+      "name": "Повышенная охрана",
+      "price": 350.0,
+      "description": "Дополнительный контроль за автотранспортом в случае чп ремонт за счет компании."
+    }
+  },
+  "total_income": 0.0,
+  "security_status": "active"
+}
