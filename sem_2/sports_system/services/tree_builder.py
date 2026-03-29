@@ -8,12 +8,6 @@ class TreeBuilder:
 
     @staticmethod
     def build_sportsmen_tree(sportsmen: list[Sportsman]) -> QStandardItemModel:
-        """
-        Создает древовидную модель для отображения спортсменов.
-
-        :param sportsmen: список спортсменов
-        :return: модель дерева QStandardItemModel
-        """
         model: QStandardItemModel = QStandardItemModel()
         model.setHorizontalHeaderLabels(["Спортсмены FC Bayern Munich"])
 

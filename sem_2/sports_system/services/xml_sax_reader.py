@@ -17,12 +17,6 @@ class SportsmenSaxHandler(ContentHandler):
         self.current_text: str = ""
 
     def startElement(self, name: str, attrs) -> None:
-        """
-        Вызывается при открытии XML-тега.
-
-        :param name: имя тега
-        :param attrs: атрибуты тега
-        """
         self.current_tag = name
         self.current_text = ""
 
@@ -37,19 +31,9 @@ class SportsmenSaxHandler(ContentHandler):
             }
 
     def characters(self, content: str) -> None:
-        """
-        Вызывается при чтении текстового содержимого тега.
-
-        :param content: текстовое содержимое
-        """
         self.current_text += content
 
     def endElement(self, name: str) -> None:
-        """
-        Вызывается при закрытии XML-тега.
-
-        :param name: имя тега
-        """
         text_value: str = self.current_text.strip()
 
         if name in self.current_data:
@@ -76,12 +60,6 @@ class XmlSaxReader:
 
     @staticmethod
     def load_from_xml(file_path: str) -> list[Sportsman]:
-        """
-        Загружает список спортсменов из XML-файла.
-
-        :param file_path: путь к XML-файлу
-        :return: список спортсменов
-        """
         handler: SportsmenSaxHandler = SportsmenSaxHandler()
         xml.sax.parse(file_path, handler)
         return handler.sportsmen

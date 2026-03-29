@@ -8,12 +8,6 @@ class XmlDomWriter:
 
     @staticmethod
     def save_to_xml(file_path: str, sportsmen: list[Sportsman]) -> None:
-        """
-        Сохраняет список спортсменов в XML-файл.
-
-        :param file_path: путь к XML-файлу
-        :param sportsmen: список спортсменов
-        """
         document: Document = Document()
 
         root_element = document.createElement("sportsmen")
@@ -40,14 +34,6 @@ class XmlDomWriter:
         tag_name: str,
         text_value: str,
     ) -> None:
-        """
-        Создает XML-элемент с текстом и добавляет его в родительский элемент.
-
-        :param document: DOM-документ
-        :param parent_element: родительский XML-элемент
-        :param tag_name: имя тега
-        :param text_value: текстовое значение
-        """
         child_element = document.createElement(tag_name)
         text_node = document.createTextNode(text_value)
         child_element.appendChild(text_node)

@@ -12,14 +12,7 @@ from views.search_dialog import SearchDialog
 
 
 class MainController:
-    """Контроллер главного окна."""
-
     def __init__(self, repository: SportsmanRepository) -> None:
-        """
-        Инициализирует контроллер главного окна.
-
-        :param repository: репозиторий для работы с данными спортсменов
-        """
         self.repository: SportsmanRepository = repository
         self.page_size: int = 10
         self.current_page: int = 1
@@ -30,7 +23,6 @@ class MainController:
         self.load_page()
 
     def _connect_signals(self) -> None:
-        """Связывает элементы интерфейса с методами контроллера."""
         self.main_window.refresh_button.clicked.connect(self.refresh_data)
         self.main_window.add_button.clicked.connect(self.open_add_dialog)
         self.main_window.search_button.clicked.connect(self.open_search_dialog)
@@ -55,11 +47,6 @@ class MainController:
         self.main_window.pagination_widget.page_size_changed.connect(self.change_page_size)
 
     def _update_views(self, sportsmen: list[Sportsman]) -> None:
-        """
-        Обновляет таблицу и дерево текущими данными.
-
-        :param sportsmen: список спортсменов для отображения
-        """
         self.current_sportsmen = sportsmen
         self.main_window.update_table(sportsmen)
 
@@ -67,7 +54,6 @@ class MainController:
         self.main_window.update_tree(tree_model)
 
     def load_page(self) -> None:
-        """Загружает текущую страницу записей."""
         total_count: int = self.repository.get_total_count()
         total_pages: int = max(1, (total_count + self.page_size - 1) // self.page_size)
 
@@ -84,23 +70,19 @@ class MainController:
         self.main_window.statusBar().showMessage("Данные загружены")
 
     def refresh_data(self) -> None:
-        """Обновляет данные в таблице и дереве."""
         self.current_page = 1
         self.load_page()
 
     def go_to_first_page(self) -> None:
-        """Переходит на первую страницу."""
         self.current_page = 1
         self.load_page()
 
     def go_to_previous_page(self) -> None:
-        """Переходит на предыдущую страницу."""
         if self.current_page > 1:
             self.current_page -= 1
             self.load_page()
 
     def go_to_next_page(self) -> None:
-        """Переходит на следующую страницу."""
         total_count: int = self.repository.get_total_count()
         total_pages: int = max(1, (total_count + self.page_size - 1) // self.page_size)
 
@@ -109,24 +91,17 @@ class MainController:
             self.load_page()
 
     def go_to_last_page(self) -> None:
-        """Переходит на последнюю страницу."""
         total_count: int = self.repository.get_total_count()
         total_pages: int = max(1, (total_count + self.page_size - 1) // self.page_size)
         self.current_page = total_pages
         self.load_page()
 
     def change_page_size(self, page_size: int) -> None:
-        """
-        Изменяет количество записей на странице.
-
-        :param page_size: новый размер страницы
-        """
         self.page_size = page_size
         self.current_page = 1
         self.load_page()
 
     def open_add_dialog(self) -> None:
-        """Открывает диалог добавления нового спортсмена."""
         dialog: AddDialog = AddDialog()
         result: int = dialog.exec()
 
@@ -140,8 +115,6 @@ class MainController:
 
             QMessageBox.information(
                 self.main_window,
-                "Успешно",
-                "Новый спортсмен успешно добавлен."
             )
 
             total_count: int = self.repository.get_total_count()
@@ -150,7 +123,6 @@ class MainController:
             self.load_page()
 
     def open_search_dialog(self) -> None:
-        """Открывает полноценный диалог поиска спортсменов."""
         sports: list[str] = self.repository.get_unique_sports()
         ranks: list[str] = self.repository.get_unique_ranks()
 
@@ -158,7 +130,6 @@ class MainController:
         dialog.exec()
 
     def open_delete_dialog(self) -> None:
-        """Открывает диалог удаления спортсменов."""
         sports: list[str] = self.repository.get_unique_sports()
         ranks: list[str] = self.repository.get_unique_ranks()
 
