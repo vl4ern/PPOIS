@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: 87ad17449716a5943ae783ebfeb0024a
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - enemyPrefab: {fileID: 6693369947901635778, guid: e59bbf6dfcc77f74da5342c75d1e95c9, type: 3}
+  - wavesJsonFile: {fileID: 4900000, guid: 76cb27e115c44054c94556137036cb1d, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

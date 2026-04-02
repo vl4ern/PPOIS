@@ -1,0 +1,27 @@
+{
+  "waves": [
+    { "waveNumber": 1,  "enemyType": "Basic",  "enemyCount": 2,  "spawnDelay": 0.50 },
+    { "waveNumber": 2,  "enemyType": "Fast",   "enemyCount": 3,  "spawnDelay": 0.45 },
+    { "waveNumber": 3,  "enemyType": "Basic",  "enemyCount": 4,  "spawnDelay": 0.40 },
+    { "waveNumber": 4,  "enemyType": "Tank",   "enemyCount": 2,  "spawnDelay": 0.80 },
+    { "waveNumber": 5,  "enemyType": "Heavy",  "enemyCount": 3,  "spawnDelay": 0.65 },
+
+    { "waveNumber": 6,  "enemyType": "Swift",  "enemyCount": 5,  "spawnDelay": 0.30 },
+    { "waveNumber": 7,  "enemyType": "Fast",   "enemyCount": 6,  "spawnDelay": 0.28 },
+    { "waveNumber": 8,  "enemyType": "Basic",  "enemyCount": 7,  "spawnDelay": 0.25 },
+    { "waveNumber": 9,  "enemyType": "Tank",   "enemyCount": 3,  "spawnDelay": 0.70 },
+    { "waveNumber": 10, "enemyType": "Heavy",  "enemyCount": 4,  "spawnDelay": 0.55 },
+
+    { "waveNumber": 11, "enemyType": "Swift",  "enemyCount": 7,  "spawnDelay": 0.22 },
+    { "waveNumber": 12, "enemyType": "Fast",   "enemyCount": 8,  "spawnDelay": 0.20 },
+    { "waveNumber": 13, "enemyType": "Tank",   "enemyCount": 4,  "spawnDelay": 0.60 },
+    { "waveNumber": 14, "enemyType": "Heavy",  "enemyCount": 5,  "spawnDelay": 0.50 },
+    { "waveNumber": 15, "enemyType": "Basic",  "enemyCount": 10, "spawnDelay": 0.18 },
+
+    { "waveNumber": 16, "enemyType": "Swift",  "enemyCount": 9,  "spawnDelay": 0.18 },
+    { "waveNumber": 17, "enemyType": "Fast",   "enemyCount": 10, "spawnDelay": 0.16 },
+    { "waveNumber": 18, "enemyType": "Tank",   "enemyCount": 5,  "spawnDelay": 0.55 },
+    { "waveNumber": 19, "enemyType": "Heavy",  "enemyCount": 6,  "spawnDelay": 0.45 },
+    { "waveNumber": 20, "enemyType": "Swift",  "enemyCount": 12, "spawnDelay": 0.14 }
+  ]
+}
