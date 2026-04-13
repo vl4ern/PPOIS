@@ -1,12 +1,10 @@
 from __future__ import annotations
-
 from app.facade import ParkingFacade
 from app.services.parking_service import CarNotFoundError, PaymentError, SpotOccupiedError
 
 
 def print_menu() -> None:
-    print("
-=== Автостоянка 78: CLI ===")
+    print("=== Автостоянка 78: CLI ===")
     print("1. Показать состояние парковки")
     print("2. Разместить автомобиль")
     print("3. Оплатить парковку")
@@ -19,8 +17,7 @@ def print_menu() -> None:
 
 def show_state(facade: ParkingFacade) -> None:
     stats = facade.stats()
-    print(f"
-Название: {stats['name']}")
+    print(f"Название: {stats['name']}")
     print(f"Всего мест: {stats['total_spots']}")
     print(f"Занято: {stats['occupied_spots']}")
     print(f"Свободно: {stats['free_spots']}")
@@ -33,8 +30,7 @@ def show_state(facade: ParkingFacade) -> None:
         print("На парковке сейчас нет автомобилей.")
         return
 
-    print("
-Автомобили на парковке:")
+    print("Автомобили на парковке:")
     for car in cars:
         print(
             f"- {car['license_plate']} | {car['model']} | место {car['spot_id']} | "

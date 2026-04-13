@@ -1,7 +1,5 @@
 from __future__ import annotations
-
 from flask import Flask, flash, redirect, render_template, request, url_for
-
 from app.facade import ParkingFacade
 from app.services.parking_service import CarNotFoundError, PaymentError, SpotOccupiedError
 
